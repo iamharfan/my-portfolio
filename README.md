@@ -1,5 +1,6 @@
-# Portfolio Deployment Guide
+Portfolio built with HTML, CSS, and JavaScript. 
 
+<<<<<<< HEAD
 Your portfolio is built with HTML, CSS, and JavaScript. It is ready to be hosted for free on **GitHub Pages**.
 
 ## Local Testing
@@ -38,3 +39,5 @@ Your portfolio is built with HTML, CSS, and JavaScript. It is ready to be hosted
 ## Customization
 - **Edit Content**: Open `index.html` to change text, links, and project details.
 - **Change Colors**: Open `style.css` and modify the `:root` variables at the top.
+=======
+>>>>>>> 9b11c2078a4445f2fd5ed363a4726c29b86dba79
