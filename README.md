@@ -6,6 +6,13 @@ Your portfolio is built with HTML, CSS, and JavaScript. It is ready to be hosted
 1. Simply double-click `index.html` to open it in your browser.
 2. Verify that the Matrix rain animation works and the tabs switch correctly.
 
+## Resume
+**Important**: You need to add your resume file to this folder.
+1. Save your resume as a PDF.
+2. Name it `resume.pdf`.
+3. Place it in the same folder as `index.html`.
+4. The "DOWNLOAD_CV()" button will then work automatically.
+
 ## How to Deploy (Free)
 
 ### Option 1: GitHub Pages (Recommended)

@@ -88,10 +88,14 @@
                                         MLOps</div>
                                 </div>
                             </div>
-                            <div class="md:w-1/4 flex flex-col justify-end">
+                            <div class="md:w-1/4 flex flex-col justify-end gap-3">
                                 <a href="#projects"
                                     class="nav-link border border-cyan-400 text-cyan-400 px-4 py-3 text-center hover:bg-cyan-400 hover:text-black">
                                     VIEW_MODELS()
+                                </a>
+                                <a href="resume.pdf" download
+                                    class="nav-link border border-green-500 text-green-500 px-4 py-3 text-center hover:bg-green-500 hover:text-black">
+                                    DOWNLOAD_CV()
                                 </a>
                             </div>
                         </div>
@@ -161,7 +165,6 @@
                         <button class="tab-btn active-tab" onclick="openTab(event, 'proj-1')">[ OBJECT_DETECTION
                             ]</button>
                         <button class="tab-btn" onclick="openTab(event, 'proj-2')">[ FACE_RECOG_EDGE ]</button>
-                        <button class="tab-btn text-gray-500" onclick="openTab(event, 'proj-3')">[ + ADD_NEW ]</button>
                     </div>
 
                     <!-- Tab 1: Thesis -->
@@ -234,18 +237,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Tab 3: New -->
-                    <div id="proj-3" class="tab-content p-6 flex items-center justify-center h-64">
-                        <div class="text-center">
-                            <p class="text-xl mb-4 text-gray-500">>> AWAITING_INPUT...</p>
-                            <p class="text-sm text-gray-600 mb-4">Edit HTML to add new project details here.</p>
-                            <button
-                                class="border border-dashed border-gray-600 px-4 py-2 text-gray-500 hover:text-green-500 hover:border-green-500 transition">
-                                + INITIALIZE_NEW_REPO
-                            </button>
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -264,7 +255,7 @@
                             <div class="flex flex-col items-center group">
                                 <svg class="tech-icon text-yellow-300" viewBox="0 0 24 24">
                                     <path
-                                        d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-2.95l.05-.62.13-.56.21-.46.26-.38.3-.31.33-.25.35-.19.35-.14.33-.1.3-.07.26-.04.21-.02H14.25zm-3.9 19.57l2.12.05 1.87.14 1.62.24 1.38.35 1.14.48.92.62.71.76.51.92.33 1.07.16 1.23-.01 1.23-.17 1.04-.32.86-.46.69-.58.53-.69.38-.78.24-.87.11-.95.02h-4.16l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.26-.36-.2-.35-.15-.35-.1-.34-.07-.33-.04-.3-.02-.27v-3.06h5.36v-2.95l-.06-.63-.13-.56-.21-.46-.26-.38-.3-.31-.33-.25-.35-.19-.35-.14-.33-.1-.3-.07-.26-.04-.21-.02H10.35z" />
+                                        d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.26-.36-.2-.35-.15-.35-.1-.34-.07-.33-.04-.3-.02-.27v-3.06h5.36v-2.95l-.06-.63-.13-.56-.21-.46-.26-.38-.3-.31-.33-.25-.35-.19-.35-.14-.33-.1-.3-.07-.26-.04-.21-.02H14.25zm-3.9 19.57l2.12.05 1.87.14 1.62.24 1.38.35 1.14.48.92.62.71.76.51.92.33 1.07.16 1.23-.01 1.23-.17 1.04-.32.86-.46.69-.58.53-.69.38-.78.24-.87.11-.95.02h-4.16l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.26-.36-.2-.35-.15-.35-.1-.34-.07-.33-.04-.3-.02-.27v-3.06h5.36v-2.95l-.06-.63-.13-.56-.21-.46-.26-.38-.3-.31-.33-.25-.35-.19-.35-.14-.33-.1-.3-.07-.26-.04-.21-.02H10.35z" />
                                 </svg>
                                 <span class="text-xs mt-2 text-green-400">PYTHON</span>
                             </div>
@@ -381,11 +372,6 @@
                                 <p class="text-xs text-gray-500">Amazon Web Services (Placeholder)</p>
                                 <a href="#" class="text-xs text-green-500 hover:underline mt-1 block">[ VIEW_CERT ]</a>
                             </div>
-                        </div>
-                        <!-- Add New Button -->
-                        <div
-                            class="border border-green-900 border-dashed p-4 flex items-center justify-center cursor-pointer hover:bg-green-900/20 transition">
-                            <span class="text-gray-500 text-sm">+ ADD_CERTIFICATION</span>
                         </div>
                     </div>
                 </div>
