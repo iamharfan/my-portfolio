@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Harfan | ML Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="crt-flicker selection:bg-green-500 selection:text-black">
+
+    <canvas id="matrix-canvas"></canvas>
+    <div class="scanlines"></div>
+
+    <!-- NAV -->
+    <div class="sticky top-0 z-40 sticky-nav w-full">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <header class="py-3 flex justify-between items-end">
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold glow-text">MOHAMMED HARFAN</h1>
+                    <p class="text-[10px] md:text-xs opacity-80 text-cyan-400">>> ROLE: ML_ENGINEER | COMP_VISION</p>
+                </div>
+                <nav class="hidden md:flex gap-2 text-[10px] md:text-xs font-bold">
+                    <a href="#home" class="nav-link px-3 py-2 active">[ /HOME ]</a>
+                    <a href="#experience" class="nav-link px-3 py-2">[ /EXP ]</a>
+                    <a href="#projects" class="nav-link px-3 py-2">[ /PROJECTS ]</a>
+                    <a href="#skills" class="nav-link px-3 py-2">[ /STACK ]</a>
+                    <a href="#education" class="nav-link px-3 py-2">[ /EDU ]</a>
+                    <a href="#certs" class="nav-link px-3 py-2">[ /CERTS ]</a>
+                </nav>
+                <button class="md:hidden text-green-500 border border-green-500 p-1 text-xs"
+                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    [ MENU ]
+                </button>
+            </header>
+            <nav id="mobile-menu"
+                class="hidden md:hidden pb-4 flex flex-col gap-2 text-sm border-t border-green-900 pt-2 bg-black">
+                <a href="#experience" class="nav-link px-3 py-2 block w-full text-center" onclick="closeMobileMenu()">[
+                    EXPERIENCE ]</a>
+                <a href="#projects" class="nav-link px-3 py-2 block w-full text-center" onclick="closeMobileMenu()">[
+                    PROJECTS ]</a>
+                <a href="#skills" class="nav-link px-3 py-2 block w-full text-center" onclick="closeMobileMenu()">[
+                    SKILLS ]</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 flex flex-col max-w-5xl">
+        <main class="flex-grow pb-10">
+
+            <!-- HOME -->
+            <section id="home" class="flex flex-col justify-center min-h-[80vh]">
+                <div class="glass-panel p-6 md:p-10 max-w-4xl fade-in-on-scroll visible ai-grid">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="border border-green-500/30 px-2 py-1 text-xs text-cyan-400 bg-green-900/20">
+                            STATUS: MODEL_CONVERGED (Epoch 100)
+                        </div>
+                        <div class="text-right text-xs opacity-60 font-mono">
+                            <p>LOC: LIMERICK, IE</p>
+                            <p id="clock">00:00:00</p>
+                        </div>
+                    </div>
+
+                    <div class="text-xl md:text-4xl leading-relaxed min-h-[100px] font-bold">
+                        <span id="typing-text"></span><span class="cursor-blink text-cyan-400">_</span>
+                    </div>
+
+                    <div class="mt-8 border-t border-green-900 pt-6">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="md:w-3/4">
+                                <p class="mb-4 text-gray-300">
+                                    I design and implement functional <span class="text-green-400">Machine
+                                        Learning</span> & <span class="text-green-400">Computer Vision</span> systems
+                                    for critical tasks |
+                                    Software Engineer @ Valtech |
+                                    Proficient in Python, ML Frameworks, Computer Vision, Cloud, GIT |
+                                    Open to CV & ML Engineer roles.
+                                </p>
+                                <div class="flex gap-4 text-sm mt-4">
+                                    <div class="flex items-center text-cyan-400"><span class="mr-2 text-lg">⌬</span> RAG
+                                        Pipeline</div>
+                                    <div class="flex items-center text-cyan-400"><span class="mr-2 text-lg">👁</span>
+                                        AI Agents</div>
+                                    <div class="flex items-center text-cyan-400"><span class="mr-2 text-lg">⚙</span>
+                                        MLOps</div>
+                                </div>
+                            </div>
+                            <div class="md:w-1/4 flex flex-col justify-end">
+                                <a href="#projects"
+                                    class="nav-link border border-cyan-400 text-cyan-400 px-4 py-3 text-center hover:bg-cyan-400 hover:text-black">
+                                    VIEW_MODELS()
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE -->
+            <section id="experience">
+                <h2
+                    class="text-2xl font-bold mb-6 border-b border-green-800 inline-block fade-in-on-scroll text-cyan-400">
+                    >> /VAR/LOG/EXPERIENCE</h2>
+
+                <div class="space-y-6">
+                    <!-- Job 1 -->
+                    <div
+                        class="glass-panel p-6 hover:bg-green-900/10 transition duration-300 fade-in-on-scroll relative group">
+                        <div class="absolute top-0 right-0 p-2 opacity-20 group-hover:opacity-100 transition">
+                            <svg class="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between mb-2">
+                            <h3 class="text-xl font-bold text-white">Software Engineer - Machine Learning</h3>
+                            <span class="text-cyan-400 font-mono text-sm">[ FEB 2022 - JUL 2024 ]</span>
+                        </div>
+                        <h4 class="text-lg text-green-400 mb-4 font-bold">VALTECH <span
+                                class="text-xs text-gray-500 font-normal">| Global Projects</span></h4>
+                        <ul class="list-disc list-inside space-y-2 opacity-90 text-sm md:text-base text-gray-300">
+                            <li>Deployed multilingual <span class="text-green-400">Transformer-based LLMs</span> & RAG
+                                pipelines (LangChain, FAISS), boosting retrieval accuracy by 50%.</li>
+                            <li>Built end-to-end MLOps pipelines with <span class="text-green-400">MLflow, Docker,
+                                    FastAPI</span> for secure NLP model deployment.</li>
+                            <li>Fine-tuned BERT/GPT models for Entity Recognition, ensuring GDPR compliance.</li>
+                            <li>Optimized inference with <span class="text-green-400">ONNX Runtime</span> & GPU
+                                acceleration.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="glass-panel p-6 hover:bg-green-900/10 transition duration-300 fade-in-on-scroll">
+                        <div class="flex flex-col md:flex-row justify-between mb-2">
+                            <h3 class="text-xl font-bold text-white">Software Engineer - Front-End</h3>
+                            <span class="text-cyan-400 font-mono text-sm">[ FEB 2019 - JAN 2022 ]</span>
+                        </div>
+                        <h4 class="text-lg text-green-400 mb-4 font-bold">VALTECH <span
+                                class="text-xs text-gray-500 font-normal">| Bangalore</span></h4>
+                        <ul class="list-disc list-inside space-y-2 opacity-90 text-sm md:text-base text-gray-300">
+                            <li>Developed scalable React dashboards, reducing load times by 40%.</li>
+                            <li>Integrated backend APIs for 3 global retail rollouts (Louis Vuitton).</li>
+                            <li>Provided Level 2 support for XStore POS across EMEA.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJECTS (TABBED CONSOLE) -->
+            <section id="projects">
+                <h2
+                    class="text-2xl font-bold mb-6 border-b border-green-800 inline-block fade-in-on-scroll text-cyan-400">
+                    >> /HOME/PROJECTS/EXEC</h2>
+
+                <div class="glass-panel p-1 fade-in-on-scroll min-h-[400px]">
+                    <!-- Tabs Header -->
+                    <div class="flex flex-wrap border-b border-green-900 bg-black/40 p-2">
+                        <button class="tab-btn active-tab" onclick="openTab(event, 'proj-1')">[ OBJECT_DETECTION
+                            ]</button>
+                        <button class="tab-btn" onclick="openTab(event, 'proj-2')">[ FACE_RECOG_EDGE ]</button>
+                        <button class="tab-btn text-gray-500" onclick="openTab(event, 'proj-3')">[ + ADD_NEW ]</button>
+                    </div>
+
+                    <!-- Tab 1: Thesis -->
+                    <div id="proj-1" class="tab-content active-content p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white">Autonomous Driving Object Detection</h3>
+                            <span class="border border-green-500 text-xs px-2 py-1 rounded text-green-400">THESIS
+                                PROJECT</span>
+                        </div>
+                        <p class="mb-4 text-gray-400 italic">Benchmarking YOLOv11 vs Faster R-CNN on KITTI Dataset.</p>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <h4 class="text-cyan-400 font-bold underline decoration-dotted">>> MODEL_METRICS</h4>
+                                <ul class="list-none space-y-2 text-sm font-mono text-gray-300">
+                                    <li><span class="text-green-500">></span> mAP Improvement: <span
+                                            class="text-white">+3.4%</span></li>
+                                    <li><span class="text-green-500">></span> Dataset: KITTI Benchmark</li>
+                                    <li><span class="text-green-500">></span> Tasks: Preprocessing, Hyperparameter
+                                        Tuning (Anchor Boxes, LR)</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-cyan-400 font-bold underline decoration-dotted">>> STACK_TRACE</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="bg-green-900/40 border border-green-700 px-2 py-1 text-xs">Python</span>
+                                    <span
+                                        class="bg-green-900/40 border border-green-700 px-2 py-1 text-xs">YOLOv11</span>
+                                    <span class="bg-green-900/40 border border-green-700 px-2 py-1 text-xs">Faster
+                                        R-CNN</span>
+                                    <span
+                                        class="bg-green-900/40 border border-green-700 px-2 py-1 text-xs">PyTorch</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Edge AI -->
+                    <div id="proj-2" class="tab-content p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white">Facial Recognition for Smart Class</h3>
+                            <span class="border border-green-500 text-xs px-2 py-1 rounded text-green-400">EDGE AI
+                                SYSTEM</span>
+                        </div>
+                        <p class="mb-4 text-gray-400 italic">Real-time attendance system deployed on Raspberry Pi.</p>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <h4 class="text-cyan-400 font-bold underline decoration-dotted">>> PERFORMANCE_LOGS</h4>
+                                <ul class="list-none space-y-2 text-sm font-mono text-gray-300">
+                                    <li><span class="text-green-500">></span> Accuracy: <span
+                                            class="text-white">98%</span> on edge devices</li>
+                                    <li><span class="text-green-500">></span> Latency: Reduced by <span
+                                            class="text-white">40%</span> via TensorRT</li>
+                                    <li><span class="text-green-500">></span> Deployment: Raspberry Pi Scalable Cluster
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-cyan-400 font-bold underline decoration-dotted">>> STACK_TRACE</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="bg-green-900/40 border border-green-700 px-2 py-1 text-xs">OpenCV</span>
+                                    <span
+                                        class="bg-green-900/40 border border-green-700 px-2 py-1 text-xs">TensorRT</span>
+                                    <span class="bg-green-900/40 border border-green-700 px-2 py-1 text-xs">ONNX
+                                        Runtime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 3: New -->
+                    <div id="proj-3" class="tab-content p-6 flex items-center justify-center h-64">
+                        <div class="text-center">
+                            <p class="text-xl mb-4 text-gray-500">>> AWAITING_INPUT...</p>
+                            <p class="text-sm text-gray-600 mb-4">Edit HTML to add new project details here.</p>
+                            <button
+                                class="border border-dashed border-gray-600 px-4 py-2 text-gray-500 hover:text-green-500 hover:border-green-500 transition">
+                                + INITIALIZE_NEW_REPO
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS WITH LOGOS -->
+            <section id="skills">
+                <h2
+                    class="text-2xl font-bold mb-6 border-b border-green-800 inline-block fade-in-on-scroll text-cyan-400">
+                    >> /USR/BIN/LIB</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Tech Stack -->
+                    <div class="glass-panel p-6 fade-in-on-scroll">
+                        <h3 class="text-xl font-bold mb-6 underline decoration-green-500">CORE_FRAMEWORKS</h3>
+                        <div class="flex flex-wrap gap-8 justify-center md:justify-start">
+                            <!-- Python -->
+                            <div class="flex flex-col items-center group">
+                                <svg class="tech-icon text-yellow-300" viewBox="0 0 24 24">
+                                    <path
+                                        d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-2.95l.05-.62.13-.56.21-.46.26-.38.3-.31.33-.25.35-.19.35-.14.33-.1.3-.07.26-.04.21-.02H14.25zm-3.9 19.57l2.12.05 1.87.14 1.62.24 1.38.35 1.14.48.92.62.71.76.51.92.33 1.07.16 1.23-.01 1.23-.17 1.04-.32.86-.46.69-.58.53-.69.38-.78.24-.87.11-.95.02h-4.16l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.26-.36-.2-.35-.15-.35-.1-.34-.07-.33-.04-.3-.02-.27v-3.06h5.36v-2.95l-.06-.63-.13-.56-.21-.46-.26-.38-.3-.31-.33-.25-.35-.19-.35-.14-.33-.1-.3-.07-.26-.04-.21-.02H10.35z" />
+                                </svg>
+                                <span class="text-xs mt-2 text-green-400">PYTHON</span>
+                            </div>
+                            <!-- TensorFlow -->
+                            <div class="flex flex-col items-center group">
+                                <svg class="tech-icon text-orange-500" viewBox="0 0 24 24">
+                                    <path
+                                        d="M11.66 2.05L12 2.19l.34-.14L16.2 3.6l.83 2.11-2.07 1.88-1.57 3.55-.83-1.66-2.06-2.5-1.33 2.5H6.28l.89-3.44.83-2.44L11.66 2.05zM5.11 9.44l1.45 2.16-1.45 6.61L3.55 9.77l1.56-.33zm12.33-.28l2.22 1.33-1.16 6.61-2.78-4.16 1.72-3.78zM12.06 9.44l2.5 4.77-1.12 5-1.44.44-1.39-1.22 1.45-9z" />
+                                </svg>
+                                <span class="text-xs mt-2 text-green-400">TENSORFLOW</span>
+                            </div>
+                            <!-- Docker -->
+                            <div class="flex flex-col items-center group">
+                                <svg class="tech-icon text-blue-500" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.82 9.07l-3.32-2.88 3.02-1.76 2.45 2.52-2.15 2.12zM5.18 9.07l3.32-2.88-3.02-1.76L3.03 6.95l2.15 2.12zm9.64-5.28l-2.88 2.5 1.76 3.04 2.52-2.47-1.4-3.07zM9.18 3.79l2.88 2.5-1.76 3.04-2.52-2.47 1.4-3.07zM12 11.23l-3.3 2.87 1.74 3.02 2.5-2.46-2.48-2.52-.46-.91zM12 18.06l3.3-2.87-1.74-3.02-2.5 2.46 2.48 2.52.46.91z" />
+                                </svg>
+                                <span class="text-xs mt-2 text-green-400">DOCKER</span>
+                            </div>
+                            <!-- React -->
+                            <div class="flex flex-col items-center group">
+                                <svg class="tech-icon text-cyan-400" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 20.3c.72 0 1.3-.58 1.3-1.3s-.58-1.3-1.3-1.3-1.3.58-1.3 1.3.58 1.3 1.3 1.3zm0-18.6c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14.5c-3.6 0-6.5-2.9-6.5-6.5S8.4 3.2 12 3.2s6.5 2.9 6.5 6.5-2.9 6.5-6.5 6.5z" />
+                                </svg>
+                                <span class="text-xs mt-2 text-green-400">REACT</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 text-sm text-gray-300 grid grid-cols-2 gap-2 font-mono">
+                            <div>> PyTorch</div>
+                            <div>> OpenCV</div>
+                            <div>> LangChain</div>
+                            <div>> HuggingFace</div>
+                            <div>> RAG / Vector DB</div>
+                            <div>> CI/CD Pipelines</div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="glass-panel p-6 fade-in-on-scroll">
+                        <h3 class="text-xl font-bold mb-4 underline decoration-green-500">PLATFORMS</h3>
+                        <div class="space-y-3">
+                            <div class="bg-green-900/20 p-2 border border-green-800 flex justify-between">
+                                <span>Google Cloud / AWS</span> <span class="text-cyan-400">ACTIVE</span>
+                            </div>
+                            <div class="bg-green-900/20 p-2 border border-green-800 flex justify-between">
+                                <span>Tesla V100 HPC</span> <span class="text-cyan-400">AVAILABLE</span>
+                            </div>
+                            <div class="bg-green-900/20 p-2 border border-green-800 flex justify-between">
+                                <span>FastAPI / REST</span> <span class="text-green-500">OPTIMIZED</span>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <h4 class="text-sm font-bold text-gray-400 mb-2">DB_CONNECTIVITY:</h4>
+                            <div class="flex gap-2 text-xs">
+                                <span class="bg-gray-800 px-2 py-1 rounded">PostgreSQL</span>
+                                <span class="bg-gray-800 px-2 py-1 rounded">FAISS</span>
+                                <span class="bg-gray-800 px-2 py-1 rounded">Pinecone</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDUCATION -->
+            <section id="education">
+                <h2
+                    class="text-2xl font-bold mb-6 border-b border-green-800 inline-block fade-in-on-scroll text-cyan-400">
+                    >> /ETC/EDUCATION</h2>
+                <div class="space-y-4">
+                    <div class="glass-panel p-6 fade-in-on-scroll">
+                        <div class="flex justify-between">
+                            <h3 class="text-lg font-bold text-white">M.Eng. Computer Vision & AI</h3>
+                            <span class="text-green-500 text-sm">2024 - 2025</span>
+                        </div>
+                        <p class="text-gray-400">University of Limerick, Ireland</p>
+                        <p class="text-xs mt-2 text-gray-500">Focus: Deep Learning, Image Processing, Neural Networks
+                        </p>
+                    </div>
+                    <div class="glass-panel p-6 fade-in-on-scroll opacity-80">
+                        <div class="flex justify-between">
+                            <h3 class="text-lg font-bold text-white">B.E. Electrical & Electronics</h3>
+                            <span class="text-green-500 text-sm">2014 - 2018</span>
+                        </div>
+                        <p class="text-gray-400">Anna University, India</p>
+                        <p class="text-xs mt-2 text-gray-500">Focus: DSP, Algorithms, Data Structures</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CERTIFICATIONS (NEW TAB) -->
+            <section id="certs">
+                <h2
+                    class="text-2xl font-bold mb-6 border-b border-green-800 inline-block fade-in-on-scroll text-cyan-400">
+                    >> /USR/LOCAL/CERTS</h2>
+
+                <div class="glass-panel p-6 fade-in-on-scroll">
+                    <p class="mb-4 text-sm text-gray-400">>> LISTING VERIFIED CREDENTIALS...</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Cert 1 Placeholder -->
+                        <div class="border border-green-800 p-4 bg-black/50 flex items-start gap-3">
+                            <div class="text-cyan-400 text-2xl">★</div>
+                            <div>
+                                <h4 class="font-bold text-white">Deep Learning Specialization</h4>
+                                <p class="text-xs text-gray-500">Coursera / DeepLearning.AI (Placeholder)</p>
+                                <a href="#" class="text-xs text-green-500 hover:underline mt-1 block">[ VIEW_CERT ]</a>
+                            </div>
+                        </div>
+                        <!-- Cert 2 Placeholder -->
+                        <div class="border border-green-800 p-4 bg-black/50 flex items-start gap-3">
+                            <div class="text-cyan-400 text-2xl">★</div>
+                            <div>
+                                <h4 class="font-bold text-white">AWS Machine Learning Specialty</h4>
+                                <p class="text-xs text-gray-500">Amazon Web Services (Placeholder)</p>
+                                <a href="#" class="text-xs text-green-500 hover:underline mt-1 block">[ VIEW_CERT ]</a>
+                            </div>
+                        </div>
+                        <!-- Add New Button -->
+                        <div
+                            class="border border-green-900 border-dashed p-4 flex items-center justify-center cursor-pointer hover:bg-green-900/20 transition">
+                            <span class="text-gray-500 text-sm">+ ADD_CERTIFICATION</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="pb-20">
+                <h2
+                    class="text-2xl font-bold mb-6 border-b border-green-800 inline-block fade-in-on-scroll text-cyan-400">
+                    >> /BIN/CONNECT</h2>
+
+                <div class="glass-panel p-8 max-w-2xl fade-in-on-scroll text-center mx-auto">
+                    <p class="mb-6 text-lg">Initialize Handshake Protocol?</p>
+
+                    <div class="flex flex-col md:flex-row justify-center gap-6 mb-8">
+                        <a href="mailto:mohamedharfana@gmail.com"
+                            class="border border-green-500 py-2 px-6 hover:bg-green-500 hover:text-black transition">
+                            EMAIL: mohamedharfana@gmail.com
+                        </a>
+                        <a href="tel:+353892004133"
+                            class="border border-green-500 py-2 px-6 hover:bg-green-500 hover:text-black transition">
+                            CALL: +353 89 200 4133
+                        </a>
+                    </div>
+
+                    <p class="text-xs text-gray-500">LOC: LIMERICK, IRELAND | STATUS: OPEN TO WORK</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="py-4 text-center text-xs opacity-40">
+            &copy; 2025 MOHAMMED HARFAN. NEURAL_OS v3.0
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
